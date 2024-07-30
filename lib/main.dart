@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todo_using_hive_database/views/home/home.view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -53,23 +54,10 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Test(),
+      home: const HomeView(),
     );
   }
 }
 
 
 
-class Test extends StatefulWidget {
-  const Test({super.key});
-
-  @override
-  State<Test> createState() => _TestState();
-}
-
-class _TestState extends State<Test> {
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
-  }
-}
